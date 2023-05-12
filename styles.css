@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #561E78;
+  color: #fff;
+  font-family: 'Gill Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+article.white-edge {
+  background: #561E78;
+  box-shadow: 15px 15px 0 rgba(255,255,255,0.5);
+  border: 4px transparent solid;
+  border-bottom-color: #490877;
+  border-right-color: #490877;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+section.page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+}
+
+section.gold {
+  background-color: #E5B45F;
+}
+
+article.island {
+  align-self: center;
+  justify-self: center;
+  width: 50%;
+  min-width: 300px;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home {
+  z-index: 4;
+  position: relative;
+}
+
+h1#logo {
+  text-indent: -99999px;
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url(images/logo2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  padding: 0;
+}
+
+article.stack {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  max-width: 100%;
+}
+
+.buffer {
+  padding: 15px;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+article.issue {
+  margin: 15px;
+  padding: 20px;
+  align-self: center;
+  max-width: 1000px;
+  font-size: 1.2rem;
+}
+
+article.cta {
+  align-self: center;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square-img {
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.square-img img {
+  display: block;
+  height: 100%;
+}
+
+.square-text {
+  padding: 20px;
+  background: #561E78;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.4em;;
+}
+
+footer {
+  color: #fff;
+  border-top: 4px #E5B45F solid;
+  padding: 10px 15px;
+  background: #561E78;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  text-align: right;
+}
+
+@media screen and (min-width: 800px) {
+  article.stack {
+    flex-direction: row;
+    aspect-ratio: 2 / 1;
+    height: 50%;
+    max-height: 400px;
+  }
+
+  .square-text {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 0.9em;
+  letter-spacing: -0.05em;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  font-style: italic;
+  border-bottom: 4px #E5B45F solid;
+
+}
+
+h2 {
+  letter-spacing: -0.02em;
+  font-size: 2em;
+  line-height: 1em;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  font-style: italic;
+  border-bottom: 2px #E5B45F solid;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  border-left: 4px #E5B45F solid;
+  padding-left: 10px;
+}
+
+p {
+  margin: 0 0 1em;
+
+}
+
+a {
+  color: inherit;
+}
+
+a.button, #mc_embed_signup input.button {
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  background: #561E78;
+  border: 2px #490877 solid;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #E5B45F;
+  cursor: pointer;
+  height: auto;
+  line-height: normal;
+}
+
+a.button:hover, #mc_embed_signup input.button:hover {
+  background-color: #490877;
+  border-color: #E5B45F;
+}
+
+a.button:active, #mc_embed_signup input.button:active {
+  background-color: #E5B45F;
+  color: #490877;
+}
+
+nav#primary {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+nav#primary a.menu-logo {
+  z-index: 3;
+  text-indent: -99999px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: #561E78;
+  background-image: url(images/logo.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: translate(-50px, 0);
+  transition: transform 0.3s;
+}
+
+nav#primary ul {
+  position: relative;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50px, 0);
+  transition: transform 0.5s;
+}
+
+nav#primary.active ul {
+  transform: translate(0, 0);
+}
+
+nav#primary.active a.menu-logo {
+  transform: translate(0, 0);
+}
+
+nav#primary ul li {
+  margin: 0;
+  display: flex;
+}
+
+nav#primary ul a {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-decoration: none;
+  background-color: #561E78;
+  margin: 0;
+  display: block;
+  padding: 8px 15px 2px 0;
+  white-space: nowrap;
+  font-size: 30px;
+  height: 50px;
+  line-height: 0.8em;
+  border-radius: 0 5px 5px 0;
+}
+
+nav#primary ul a:hover {
+  color: #E5B45F;
+}
+
+nav#primary ul a i {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+nav#primary ul li {
+  width: 50px;
+  overflow: hidden;
+  transition: width 0.5s, margin 0.5s;
+}
+
+a.mobile-opener {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-indent: -99999px;
+  background: url(images/mobile-menu.png) center center no-repeat;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+nav#primary.active a.mobile-opener {
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 600px) {
+
+  a.mobile-opener {
+    display: none;
+  }
+
+  nav#primary ul {
+    transform: translate(0, 0);
+  }
+  
+  nav#primary a.menu-logo {
+    transform: translate(0, 0);
+  }
+  
+
+  nav#primary:hover ul li {
+    width: 350px;
+    margin: 0;
+  }
+
+  nav#primary:hover ul li:hover {
+    margin: 5px 0;
+  }
+
+}
+
+/* Form Styles */
+
+.indicates-required {
+  font-size: 13px;
+  text-align: right;
+}
+
+.mc-field-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.cta #mc_embed_signup .mc-field-group.input-group ul li {
+  margin: 0 10px 0 0;
+}
+
+.brandingLogo {
+  display: none;
+}
+
+#mc_embed_signup {
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.mc-field-group {
+  margin: 0 0 10px;
+}
+
+input.email {
+  background: #490877;
+  color: #fff;
+  border: none;
+  padding: 2px 5px;
+  font-size: 16px;
+  border-bottom: 2px #E5B45F solid;
+}
+
+input.email:focus {
+  box-shadow: 0 0 2px 2px #E5B45F;
+}
